@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #fa7257, #f363a7);
+}
+
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.button1 {
+  margin-right: 100px;
+  text-align: center;
+  border-radius: 10px;
+  color: #dd1264;
+  padding: 10px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #ffffff;
+  font-weight: 700;
+}
+
+.button2 {
+  margin-left: 100px;
+  text-align: center;
+  border-radius: 10px;
+  color: #dd1264;
+  padding: 10px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #ffffff;
+  font-weight: 700;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  height: 80px;
+  background-color: #fddddb;
+  margin-top: 20px;
+  border-radius: 10px;
+  align-items: center;
+  font-weight: 700;
+  margin-right: 90px;
+  visibility: hidden; /* Initial state - hidden but still occupies space */
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  height: 80px;
+  background-color: #fddddb;
+  margin-top: 20px;
+  border-radius: 10px;
+  align-items: center;
+  font-weight: 700;
+  margin-left: 80px;
+  visibility: hidden; /* Initial state - hidden but still occupies space */
+}
+
+/* This class makes the boxes visible */
+.box1.show,
+.box2.show {
+  visibility: visible;
+}
